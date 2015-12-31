@@ -1,0 +1,39 @@
+.row >card{
+	padding: 0px 10px;
+}
+.card-image{
+    margin: auto;
+}
+.card-image{
+	height: 185px!important;
+    max-width: 715px; 
+    max-height: 215px;
+}
+.card .card-image img {
+	height: 100%;
+}
+.card{
+    height: 290px !important;
+}
+.card-title>.material-icons{
+    font-size: 30px !important;
+}
+.profile-photo{
+    height: 170px;
+    width: auto !important;
+}
+.top-content{
+    margin-top: 20px;
+}
+.tab-options{
+    margin-bottom: 20px;
+}
+.logo{
+    height: 55px;
+}
+.slider, .slider>ul, .parallax-container{
+    height: 300px !important;
+}
+.parallax-container{
+    width: 100%;
+}
