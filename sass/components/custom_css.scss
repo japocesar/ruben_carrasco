@@ -1,0 +1,60 @@
+/* GLOBAL */
+body{
+	font-size: $font-14;
+}
+a{
+	font-size: $font-14;
+}
+.small-info{
+	i{
+		font-size: $font-50;
+		color: $color-live;
+	}
+	.info-caption{
+		color: $color-dark;
+	}
+	.info-content{
+		color: $color-gray;
+	}
+}
+.row-info{
+	margin-top: 20px;
+}
+
+/* HEADER */
+.nav-wrapper{
+	background: $color-base;
+	height: 64px;
+}
+.logo{
+	height:64px;
+}
+
+/* TABS */
+.tab-options{
+	margin-bottom: 20px;
+	.tabs{
+		.tab a{
+			color: $color-light;
+			&.active{
+				color: $color-dark;
+			}
+		}
+		.indicator{
+			background-color: $color-live;
+		}
+	}
+}
+
+
+.profile-photo{
+	height: 170px;
+	width: auto;
+}
+
+.slider, .slider ul, .parallax-container{
+	height: 300px;
+}
+.parallax-container{
+	width: 100%;
+}
