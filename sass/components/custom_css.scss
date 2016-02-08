@@ -45,16 +45,21 @@ a{
 		}
 	}
 }
-
-
 .profile-photo{
 	height: 170px;
 	width: auto;
 }
 
-.slider, .slider ul, .parallax-container{
-	height: 300px;
-}
 .parallax-container{
 	width: 100%;
+}
+@media #{$small-and-down}{
+	.slider, .slider ul, .parallax-container{
+		height: 200px !important;
+	}
+}
+@media #{$medium-and-up}{
+	.slider, .slider ul, .parallax-container{
+		height: 300px !important;
+	}
 }

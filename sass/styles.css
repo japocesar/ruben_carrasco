@@ -7739,7 +7739,6 @@ select {
     opacity: 0; } }
 .slider {
   position: relative;
-  height: 400px;
   width: 100%; }
   .slider.fullscreen {
     height: 100%;
@@ -7771,7 +7770,7 @@ select {
         height: 100%;
         width: 100%;
         background-size: cover;
-        background-position: center; }
+        background-position: left; }
       .slider .slides li .caption {
         color: #fff;
         position: absolute;
@@ -8502,10 +8501,14 @@ a {
   height: 170px;
   width: auto; }
 
-.slider, .slider ul, .parallax-container {
-  height: 300px; }
-
 .parallax-container {
   width: 100%; }
+
+@media only screen and (max-width: 600px) {
+  .slider, .slider ul, .parallax-container {
+    height: 200px !important; } }
+@media only screen and (min-width: 601px) {
+  .slider, .slider ul, .parallax-container {
+    height: 300px !important; } }
 
 /*# sourceMappingURL=styles.css.map */

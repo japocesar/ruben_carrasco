@@ -5,7 +5,7 @@
     init : function(options) {
       var defaults = {
         indicators: true,
-        height: 400,
+        //height: 400,
         transition: 500,
         interval: 6000
       };
