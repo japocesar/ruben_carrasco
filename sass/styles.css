@@ -8467,6 +8467,8 @@ body {
 
 a {
   font-size: 1em; }
+  a.active {
+    color: #FF7100; }
 
 .small-info i {
   font-size: 3.571em;
@@ -8506,9 +8508,35 @@ a {
 
 @media only screen and (max-width: 600px) {
   .slider, .slider ul, .parallax-container {
-    height: 200px !important; } }
+    height: 200px !important; }
+
+  .parallax img {
+    bottom: 185px; } }
 @media only screen and (min-width: 601px) {
   .slider, .slider ul, .parallax-container {
-    height: 300px !important; } }
+    height: 400px !important; } }
+/* COLLAPSIBLE */
+.collapsible {
+  margin: 0.5rem 0 3rem 0 !important; }
+  .collapsible .collapsible-body {
+    width: 90%;
+    margin: 0 auto; }
+    .collapsible .collapsible-body ul {
+      margin: 0 15px !important; }
+    .collapsible .collapsible-body p {
+      padding: 10px !important; }
+  .collapsible .collapsible-header {
+    font-weight: bold; }
+    .collapsible .collapsible-header.active {
+      border-bottom: 1px solid #FF7100;
+      background: #C2C2C2; }
+    .collapsible .collapsible-header i {
+      color: #FF7100; }
+
+@media only screen and (max-width: 600px) {
+  .collapsible-header {
+    font-size: 0.643em; }
+    .collapsible-header.active {
+      font-size: 1em; } }
 
 /*# sourceMappingURL=styles.css.map */

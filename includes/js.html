@@ -9,4 +9,8 @@
             closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
         });
     });
+    $(window).load(function(){
+    	var activeItem = location.pathname.replace(/\/|.html/g,'');
+    	$('a[href*="'+activeItem+'"]').addClass('active');
+    });
 </script>

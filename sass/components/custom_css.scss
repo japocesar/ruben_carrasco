@@ -4,6 +4,9 @@ body{
 }
 a{
 	font-size: $font-14;
+	&.active{
+		color: $color-live;
+	}
 }
 .small-info{
 	i{
@@ -57,9 +60,45 @@ a{
 	.slider, .slider ul, .parallax-container{
 		height: 200px !important;
 	}
+	.parallax img{
+		bottom: 185px;
+	}
 }
 @media #{$medium-and-up}{
 	.slider, .slider ul, .parallax-container{
-		height: 300px !important;
+		height: 400px !important;
+	}
+}
+
+/* COLLAPSIBLE */
+.collapsible{
+	margin: 0.5rem 0 3rem 0 !important;
+	.collapsible-body{
+		width: 90%;
+		margin: 0 auto;
+		ul{
+			margin: 0 15px !important;
+		}
+		p{
+		padding: 10px !important;
+		}
+	}
+	.collapsible-header{
+		&.active{
+			border-bottom: 1px solid $color-live;
+			background: $color-lighter;
+		}
+		font-weight: bold;
+		i{
+			color: $color-live;
+		}
+	}
+}
+@media #{$small-and-down}{
+	.collapsible-header{
+		font-size: $font-9;
+		&.active{
+			font-size: $font-14;
+		}
 	}
 }
