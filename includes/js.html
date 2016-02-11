@@ -2,12 +2,20 @@
 <script type="text/javascript" src="jsm/combined.min.js"></script>
 <script>
     $(document).ready(function(){
+        resizeWindow();
+        $(window).on('resize orientationchange',function(event){
+            resizeWindow();
+        });
         $(".dropdown-button").dropdown();
         $('.button-collapse').sideNav({
             menuWidth: 300, // Default is 240
             edge: 'left', // Choose the horizontal origin
             closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
         });
+        function resizeWindow(){
+            var temp = $(window).height() - $('nav').height();
+            $('.slider, .slides').css('height',temp);
+        }
     });
     $(window).load(function(){
     	var activeItem = location.pathname.replace(/\/|.html/g,'');

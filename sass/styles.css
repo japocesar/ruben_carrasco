@@ -8489,6 +8489,10 @@ a {
 .logo {
   height: 64px; }
 
+/* SLIDER */
+@media only screen and (max-width: 992px) {
+  .slider .slides li img {
+    background-position: bottom !important; } }
 /* TABS */
 .tab-options {
   margin-bottom: 20px; }
@@ -8500,21 +8504,23 @@ a {
     background-color: #FF7100; }
 
 .profile-photo {
-  height: 170px;
-  width: auto; }
+  height: 100%;
+  width: 100%;
+  max-width: 175px;
+  max-height: 235px; }
 
 .parallax-container {
   width: 100%; }
 
-@media only screen and (max-width: 600px) {
-  .slider, .slider ul, .parallax-container {
-    height: 200px !important; }
-
+@media only screen and (max-width: 992px) {
+  /*.slider, .slider ul, .parallax-container{
+  	height: 200px !important;
+  }*/
   .parallax img {
     bottom: 185px; } }
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 993px) {
   .slider, .slider ul, .parallax-container {
-    height: 400px !important; } }
+    /*height: 400px !important;*/ } }
 /* COLLAPSIBLE */
 .collapsible {
   margin: 0.5rem 0 3rem 0 !important; }
@@ -8534,9 +8540,21 @@ a {
       color: #FF7100; }
 
 @media only screen and (max-width: 600px) {
-  .collapsible-header {
-    font-size: 0.643em; }
-    .collapsible-header.active {
-      font-size: 1em; } }
+  .collapsible li {
+    margin: 0 !important; }
+    .collapsible li .collapsible-header {
+      font-size: 0.857em; }
+      .collapsible li .collapsible-header.active {
+        font-size: 1em; } }
+/* CARDS */
+.card .card-image .card-title {
+  color: #000;
+  font-weight: bold; }
+.card .card-action a {
+  color: #FF7100 !important; }
+.card .card-action i {
+  font-size: 0.857em; }
+.card.small {
+  height: 345px !important; }
 
 /*# sourceMappingURL=styles.css.map */

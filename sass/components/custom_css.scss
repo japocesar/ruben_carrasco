@@ -32,6 +32,16 @@ a{
 .logo{
 	height:64px;
 }
+/* SLIDER */
+@media #{$medium-and-down}{
+	.slider {
+		.slides li {
+			img{
+				background-position: bottom !important;
+			}
+		}
+	}
+}
 
 /* TABS */
 .tab-options{
@@ -49,24 +59,26 @@ a{
 	}
 }
 .profile-photo{
-	height: 170px;
-	width: auto;
+	height: 100%;
+	width: 100%;
+	max-width: 175px;
+	max-height: 235px;
 }
 
 .parallax-container{
 	width: 100%;
 }
-@media #{$small-and-down}{
-	.slider, .slider ul, .parallax-container{
+@media #{$medium-and-down}{
+	/*.slider, .slider ul, .parallax-container{
 		height: 200px !important;
-	}
+	}*/
 	.parallax img{
 		bottom: 185px;
 	}
 }
-@media #{$medium-and-up}{
+@media #{$large-and-up}{
 	.slider, .slider ul, .parallax-container{
-		height: 400px !important;
+		/*height: 400px !important;*/
 	}
 }
 
@@ -95,10 +107,33 @@ a{
 	}
 }
 @media #{$small-and-down}{
-	.collapsible-header{
-		font-size: $font-9;
-		&.active{
-			font-size: $font-14;
+	.collapsible{
+		li{
+			margin: 0 !important;
+			.collapsible-header{
+				font-size: $font-12;
+				&.active{
+					font-size: $font-14;
+				}
+			}
 		}
+	}
+}
+/* CARDS */
+.card{
+	.card-image .card-title{
+		color: $color-base;
+		font-weight: bold;
+	}
+	.card-action{
+		a{
+			color: $color-live !important;
+		}
+		i{
+			font-size: $font-12;
+		}
+	}
+	&.small{
+		height: 345px !important;
 	}
 }
