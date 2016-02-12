@@ -8,6 +8,12 @@ a{
 		color: $color-live;
 	}
 }
+.btn, .btn-large{
+	background: $color-live !important;
+}
+.mdi-navigation-menu{
+	color: $color-live;
+}
 .small-info{
 	i{
 		font-size: $font-50;
@@ -29,6 +35,11 @@ a{
 	background: $color-base;
 	height: 64px;
 }
+.waves-effect{
+	&.waves-orange .waves-ripple {
+      background: rgba(255, 113, 0, .70) !important;
+    }
+}
 .logo{
 	height:64px;
 }
@@ -39,8 +50,26 @@ a{
 			img{
 				background-position: bottom !important;
 			}
+			.caption{
+				top: 15% !important;
+			}
 		}
 	}
+}
+.cover{
+	position:absolute;
+	top:0;
+	background:black;
+	opacity:0.3;
+	height:100%;
+	width:100%;
+	z-index:2;
+	&.white{
+		background: white;
+	}
+}
+.caption{
+	z-index: 5;
 }
 
 /* TABS */
@@ -72,8 +101,11 @@ a{
 	/*.slider, .slider ul, .parallax-container{
 		height: 200px !important;
 	}*/
-	.parallax img{
-		bottom: 185px;
+	.parallax-container{
+		height: 200px !important;
+		.parallax img{
+			bottom: 185px;
+		}
 	}
 }
 @media #{$large-and-up}{
@@ -125,6 +157,9 @@ a{
 		color: $color-base;
 		font-weight: bold;
 	}
+	.card-title{
+		z-index: 3;
+	}
 	.card-action{
 		a{
 			color: $color-live !important;
@@ -133,7 +168,28 @@ a{
 			font-size: $font-12;
 		}
 	}
-	&.small{
+	/*&.small{
 		height: 345px !important;
+	}*/
+}
+@media #{$smaller-and-down}{
+	.card{
+		&.small{
+			height: 300px !important;
+		}
+	}
+}
+@media #{$smaller-and-up}{
+	.card{
+		&.small{
+			height: 320px !important;
+		}
+	}
+}
+@media #{$large-and-up}{
+	.card{
+		&.small{
+			height: 335px !important;
+		}
 	}
 }

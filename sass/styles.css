@@ -7774,7 +7774,7 @@ select {
       .slider .slides li .caption {
         color: #fff;
         position: absolute;
-        top: 15%;
+        top: 30%;
         left: 15%;
         width: 70%;
         opacity: 0; }
@@ -8470,6 +8470,12 @@ a {
   a.active {
     color: #FF7100; }
 
+.btn, .btn-large, .btn-large {
+  background: #FF7100 !important; }
+
+.mdi-navigation-menu {
+  color: #FF7100; }
+
 .small-info i {
   font-size: 3.571em;
   color: #FF7100; }
@@ -8486,13 +8492,32 @@ a {
   background: #000;
   height: 64px; }
 
+.waves-effect.waves-orange .waves-ripple {
+  background: rgba(255, 113, 0, 0.7) !important; }
+
 .logo {
   height: 64px; }
 
 /* SLIDER */
 @media only screen and (max-width: 992px) {
   .slider .slides li img {
-    background-position: bottom !important; } }
+    background-position: bottom !important; }
+  .slider .slides li .caption {
+    top: 15% !important; } }
+.cover {
+  position: absolute;
+  top: 0;
+  background: black;
+  opacity: 0.3;
+  height: 100%;
+  width: 100%;
+  z-index: 2; }
+  .cover.white {
+    background: white; }
+
+.caption {
+  z-index: 5; }
+
 /* TABS */
 .tab-options {
   margin-bottom: 20px; }
@@ -8516,8 +8541,10 @@ a {
   /*.slider, .slider ul, .parallax-container{
   	height: 200px !important;
   }*/
-  .parallax img {
-    bottom: 185px; } }
+  .parallax-container {
+    height: 200px !important; }
+    .parallax-container .parallax img {
+      bottom: 185px; } }
 @media only screen and (min-width: 993px) {
   .slider, .slider ul, .parallax-container {
     /*height: 400px !important;*/ } }
@@ -8547,14 +8574,28 @@ a {
       .collapsible li .collapsible-header.active {
         font-size: 1em; } }
 /* CARDS */
-.card .card-image .card-title {
-  color: #000;
-  font-weight: bold; }
-.card .card-action a {
-  color: #FF7100 !important; }
-.card .card-action i {
-  font-size: 0.857em; }
-.card.small {
-  height: 345px !important; }
+.card {
+  /*&.small{
+  	height: 345px !important;
+  }*/ }
+  .card .card-image .card-title {
+    color: #000;
+    font-weight: bold; }
+  .card .card-title {
+    z-index: 3; }
+  .card .card-action a {
+    color: #FF7100 !important; }
+  .card .card-action i {
+    font-size: 0.857em; }
+
+@media only screen and (max-width: 450px) {
+  .card.small {
+    height: 300px !important; } }
+@media only screen and (min-width: 450px) {
+  .card.small {
+    height: 320px !important; } }
+@media only screen and (min-width: 993px) {
+  .card.small {
+    height: 335px !important; } }
 
 /*# sourceMappingURL=styles.css.map */
